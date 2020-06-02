@@ -1,0 +1,271 @@
+{
+  "title": "Viking Raiders",
+  "storyStart" : 0,
+  "quests": [
+    {
+      "id":0,
+      "text": "Budzisz się w domu z bólem głowy, ponieważ wczoraj było święto plonów. Cała noc zabawy, picia i tańca. Spojrzałeś przez okno i zobaczyłeś promienie słońca pomiędzy drzewami. Co robisz?",
+      "backImage": "house",
+      "paths": [
+        {
+          "text": "Wstajesz i ubierasz się",
+          "success": 1
+        },
+        {
+          "text": "Postanawiasz iść spać dalej.",
+          "success": 2
+        }
+      ]
+
+    },
+    {
+      "id":1,
+      "text": "Wstałeś. Poczułeś lekkie zawroty głowy, ale nie przewróciłeś się. Po ubraniu wychodzisz na dwór i widzisz piękny las oraz swojego ojca przy kołku rąbiacego drewno na opał.",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Idź do ojca",
+          "success": 3
+        },
+        {
+          "text": "Spróbuj ominąć ojca i idź do kolegów",
+          "chance": 0.5,
+          "success": 5,
+          "failure": 3
+        },{
+          "text": "Krzyknij do ojca, że idziesz na targ.",
+          "success": 4
+        }
+      ]
+
+    },
+    {
+      "id":2,
+      "text": "Zasnąłeś na kolejne parę godzin. Zostajesz obudzony przez ojca, który krzyczy do ciebie, że masz się natychmiast schować. Nie masz pojęcia co się dzieje, ale chowasz się pod podłogą. Nagle słyszysz trzaski i szczęk metalu.",
+      "backImage": "house",
+      "paths": [
+        {
+          "text": "Wyjdź z kryjówki i zacznij uciekać w stronę lasu",
+          "success": 5,
+          "chance": 0.7,
+          "failure": 7
+        },{
+          "text": "Pozostań w kryjówce",
+          "success": 6
+        }
+      ]
+
+    },
+    {
+      "id":3,
+      "text": "Podchodzisz do ojca, a ten mówi ci, że masz iść do lasu sprawdzić, czy nikt się tam nie panoszy",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Idź do lasu",
+          "success": 9
+        }
+      ]
+
+    },{
+      "id":4,
+      "text": "Idąc na targ, zauważasz, że grupa znajomych osób rozmawia o najnowszych wieściach z wędrowcem. Rozmowa na temat nowego wroga, który pojawił się i plądruje przybrzeżne okolice. Większość ludzi mówi, że tutaj nikomu nic nie grozi, ponieważ jesteśmy za daleko od nabrzeża. Wędrowiec kontunuował opowieść zaznaczając, że owi Wikingowie są coraz odważniejsi w swoich plądrowaniach.",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Idź do lasu na wzgórze do wielkiego dębu, aby się wspiąć i zobaczyć okoliczne tereny",
+          "success": 13
+        },{
+          "text": "Idź dalej na targ, nie zawracając sobie dalej głowy wiadomościami, które własnie usłyszałeś",
+          "success": 17
+        }
+      ]
+    },{
+      "id":5,
+      "text": "Udało ci się uciec! Podczas ucieczki zauważyłeś, że na wioskę napadli Wikingowie, o których wieści dochodziły z różnych stron, ale nikt nie wierzył w to, że dotrą oni tak daleko. Kiedy już myślałeś, że jest bezpiecznie i stanąłeś na chwilę, aby odpocząć, zacząłeś słyszeć głosy w oddali.",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Wespnij się na drzewo i czekaj, aż najeźdzcy porzucą poszukiwania",
+          "chance": 0.8,
+          "failure": 7,
+          "success": 8
+        },{
+          "text": "Zacznij uciekać dalej",
+          "chance": 0.3,
+          "success": 8,
+          "failure": 7
+        },{
+          "text": "Zauważyłeś dziurę, schowaj się w niej i przykryj liścmi, licząc, że nikt cię nie zauważy",
+          "chance": 0.5,
+          "success": 8,
+          "failure": 7
+        }
+      ]
+    },{
+      "id":6,
+      "text": "Po wielu godzinach spędzonych pod deskami własnego domu, szłyszysz, że krzyki w wiosce ustały, a najeźdzcy zaczynają opuszczać ją biorąc ze sobą łupy. Czekasz jeszcze jakiś czas, a następnie powoli wychodzisz z kryjówki.",
+      "backImage": "house",
+      "paths": [
+        {
+          "text": "Spójrz przez okno.",
+          "success": 10
+        },{
+          "text": "Wyjdź na zewnątrz",
+          "success": 7
+        }
+      ]
+    },{
+      "id":7,
+      "text": "Niestety, Wikingowie złapali cię. Koniec gry",
+      "backImage": "viking",
+      "paths": [
+        {
+          "text": "Kliknij, aby zacząć od nowa",
+          "success": 0
+        }
+      ]
+    },{
+      "id":8,
+      "text": "Nikt z napastników nie zauważył, gdzie jesteś, pościg zażegnany. Zostajesz w kryjówce jeszcze przez jakiś czas, a następnie...",
+      "backImage": "viking",
+      "paths": [
+        {
+          "text": "Wracasz do swojej chaty.",
+          "success": 11
+        },{
+          "text": "Idziesz sprawdzić, co się stało w centrum wsi.",
+          "success": 12
+        }
+      ]
+    },{
+      "id":9,
+      "text": "Idziesz wzdłóż dróg leśnych, rozglądając się za nieproszonymi gośćmi. Po jakimś czasie dochodzisz na wzniesienie z wysokim drzewem. Jako dobry wspinacz, czasem lubisz patrzeć na świat z góry. Co robisz?",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Wspinasz się na drzewo",
+          "chance": 0.9,
+          "success": 13,
+          "failure": 14
+        },{
+          "text": "Idziesz dalej wgłąb lasu...",
+          "success": 15
+        }
+      ]
+    },{
+      "id":10,
+      "text": "Spoglądając przez okno, widzisz, najeźdzców, są to Wikingowie, o których wieści przynoszono z różnych stron. Nikt jendak nie dawał wiary temu, że dotrą tak głęboko w ląd. Odchodząc od okna usłyszałeś jeszcze głosy, tuż przy drzwiach, dlatego poczekałeś aż głosy umilną i wyszedłeś na zewnątrz.",
+      "backImage": "viking",
+      "paths": [
+        {
+          "text": "Podejdź do ojca",
+          "success": 11
+        },{
+          "text": "Idź do wioski",
+          "success": 17
+        }
+      ]
+    },{
+      "id":11,
+      "text": "Widząc swojego ojca, leżącego bez ducha, nie możesz powstrzymać płaczu. Myślisz co poszło nie tak, co można było zrobić inaczej, aby uratować wioskę. Aby to sprawdzić, zacznij od nowa. ",
+      "backImage": "house",
+      "paths": [
+        {
+          "text": "Kliknij, aby zacząć od nowa",
+          "success": 0
+        }
+      ]
+    },{
+      "id":12,
+      "text": "Widząc swojego ojca, leżącego bez ducha, nie możesz powstrzymać płaczu. Myślisz co poszło nie tak, co można było zrobić inaczej, aby uratować wioskę. Aby to sprawdzić, zacznij od nowa. ",
+      "backImage": "house",
+      "paths": [
+        {
+          "text": "Kliknij, aby zacząć od nowa",
+          "success": 0
+        }
+      ]
+    },{
+      "id":13,
+      "text": "Ze szczytu drzewa w oddali widzisz oddział uzbrojonych wojowników, którzy nie wygladają, jak miejscowi żołnieże, dlatego czym prędzej schodzisz z drzewa i biegniesz do miejscowego posterunku donieść, co widziałeś.",
+      "backImage": "archer",
+      "paths": [
+        {
+          "text": "Biegnij do posterunku.",
+          "success": 18
+        }
+      ]
+    },{
+      "id":14,
+      "text": "Spadłeś podczas wspinaczki. Koniec gry.",
+      "backImage": "forest",
+      "paths": [
+        {
+          "text": "Kliknij, aby zacząć od nowa",
+          "success": 0
+        }
+      ]
+    },{
+      "id":15,
+      "text": "Dochodzisz do drugiego końca lasu, wszystko wydawało ci się w porzątku, dlatego zaczynasz wracać do domu powiedzieć o wszystkim ojcu. Niestety, w czasie drogi powrotnej usłyszałeś krzyki w nieznanym języku, które zbliżały się do Ciebie.",
+      "backImage": "viking",
+      "paths": [
+        {
+          "text": "Kontynuuj...",
+          "success": 16
+        }
+      ]
+    },{
+      "id":16,
+      "text": "Próbowałeś uciec przez najeźdzcami, dlatego biegłeś ile sił w nogach. Niestety było już za późno na ucieczkę..",
+      "backImage": "viking",
+      "paths": [
+        {
+          "text": "Dalej...",
+          "success": 7
+        }
+      ]
+    },{
+      "id":17,
+      "text": "Doszedłeś na targ.. Widzisz znajome zmęczone twarze, po wczorajszej zabawie. Robisz potrzebne zakupy, rozmawiasz z ludźmi i wymieniasz się wspomnieniami z wczoraj. Po kilku godzinach w centrum wioski postanawiasz wrócić do domu, niestety z oddali słychać krzyki i wrzaski..",
+      "backImage": "village",
+      "paths": [
+        {
+          "text": "Dalej..",
+          "success": 19
+        }
+      ]
+    },{
+      "id":18,
+      "text": "Dzięki szybkiemu meldunkowi, obrona zdążyła się zmobilizować. Mobilizują także wszystkich, którzy mogą walczyć, w tym ciebie.",
+      "backImage": "archer",
+      "paths": [
+        {
+          "text": "Przyłącz się do obrony wioski",
+          "success": 20
+        }
+      ]
+    },{
+      "id":19,
+      "text": "Zdałeś sobie sprawę, że powinniście posłuchać wędrowca i być czujnymi. Wikingowie napadli na waszą wioskę i złupili ją. Przegrałeś.. Koniec gry",
+      "backImage": "village",
+      "paths": [
+        {
+          "text": "Kliknij, aby zacząć nową grę",
+          "success": 0
+        }
+      ]
+    },{
+      "id":20,
+      "text": "Dzięki twojemu przeczuciu, które podpowiedziało ci, że należy coś zrobić. Przyłączyłeś się do obrony wioski, a razem z tobą wielu chłopów i dzięki współpracy udało wam się obronić wioskę. Brawo!! Wygrałeś grę!",
+      "backImage": "archer",
+      "paths": [
+        {
+          "text": "Jeżeli chcesz rozpocząć nową, kliknij tutaj.",
+          "success": 0
+        }
+      ]
+    }
+  ]
+}
